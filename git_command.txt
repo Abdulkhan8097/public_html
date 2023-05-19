@@ -1,0 +1,20 @@
+git command 
+
+1.git status
+2.git add application/controllers/Smart_sip_order.php application/views/order/sip_calendar.php   2 more file
+3.git commit -m "RAN-3579 Delete Portfolio summary record on smartsip cancel for same client id"  ticket no required
+4.git branch
+5.git pull origin master
+6.git push
+
+
+conflict resolve
+1.git checkout dev-newof
+2.git branch
+3.git pull
+4.git merge abdul-portfolio-delete-3579
+5.git status
+6.git add application/core/MY_Controller.php
+7.git commit -m "RAN-3579 conflict resolve"
+8.git pull
+9.git push
