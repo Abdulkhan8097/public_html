@@ -1,0 +1,70 @@
+#Contact_Us_Home {
+  padding: 110px 0px 50px 0px;
+}
+/*#Contact_Us_Home h2 { margin-bottom: 22px; }*/
+/*#Contact_Us_Home p { margin: 0px 0px 6px 0px; }*/
+#Contact_Us_Home p .cities { margin-bottom: 19px; font-family: 'Gotham-Bold'; font-weight: normal; color: #000; letter-spacing: 1px;}
+.contact_mail {margin-top: 8px;}
+.contact_mail p {margin: 0 0;}
+.contact_mail p strong {font-weight: normal; font-family: 'Gotham-Bold'; color: #000; letter-spacing: 1px;}
+.contact_mail p a{color: #606060;}
+
+.form-control {
+    height: 34px;
+    padding: 6px 25px;
+    height: 60px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #606060;
+    background: #fff;
+    border: 1px solid #231F20;
+    border-radius: 0px;   
+    outline: none;    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+textarea.form-control {
+    height: 150px;
+    padding-top: 25px;
+}
+
+.form-group { margin-bottom: 18px; position: relative; }
+
+.form-group input[type="submit"] {
+  background: #fdcf0b;
+  border: 0px;
+  width: 145px;
+  height: 47px;
+  margin-top: 20px;
+  font-family: 'Gotham-Medium';
+}
+
+.form-group input::placeholder, .form-group textarea::placeholder { color: #606060; }
+
+label.error {
+  font-size: 13px;
+  font-family: 'Gotham-Book';
+  font-weight: normal;
+  color: red;
+  display: block;
+  width: 100%;
+  padding: 5px 0 0 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+.contact_mail {margin-top: 10px;}
+.contact_mail p {margin: 0 0;}
+.contact_mail p a {color: #606060;}
+.form-control {height: 40px; font-size: 12px; padding: 8px 12px 8px;}
+textarea.form-control {height: 80px; padding: 9px 12px;}
+#contact_form {text-align: center; margin-top: 40px;}
+.form-group input[type="submit"] {font-size: 13px; line-height: 36px; height: 36px; width: 120px; text-align: center; border-radius: 0;}
+#Contact_Us_Home {padding: 60px 0 32px;}
+#Contact_Us_Home p .cities {font-weight: normal; font-family: 'Gotham-Bold'; color: #606060;}
+
+
+}

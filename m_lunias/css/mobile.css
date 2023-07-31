@@ -1,0 +1,48 @@
+@media only screen and (max-width: 768px) {
+
+.landing_banner .banner01 {background: url(../images/home/mobile/01_a_legacy_continued_through_generations.jpg) no-repeat center center; background-size: cover;}
+.landing_banner .banner02 {background: url(../images/home/mobile/02_bridging_gaps_across_the_globe.jpg) no-repeat center center; background-size: cover;}
+.landing_banner .banner03 {background: url(../images/home/mobile/multitude_of_chemicals.jpg) no-repeat center center; background-size: cover;}
+.banner_msg {text-align: center;}
+#landing_dots {text-align: center;}
+.banner_msg h2 {font-size: 7.5vw; line-height: 10vw;}
+.banner_msg h3 {font-size: 5vw;}
+
+.about_us_img {margin-bottom: 58px;}
+.banner_msg h3 {margin:28px 0 86px;}
+.about_us_banner,.weoffer, .brands {padding: 60px 0;}
+.page_title{font-size: 18px;}
+.our_performance h5 {font-size: 15px; line-height: 19px;}
+.our_performance h3 {font-size: 45px; line-height: 47px;}
+.our_performance h2 {margin-top: 30px; line-height: 24px;}
+.perform {margin: 26px 0;}
+.weoffer .about_us_desc {margin: 0 0 62px;}
+.weoffer .knowmore.orange a {margin-top: 36px;}
+.services_box h6 {font-size: 16px; margin: 16px 0 0 0;}
+.services_box p {display: none;}
+.weoffer .col-xs-2:nth-child(1) .services_box img {width: 94%;}
+.weoffer .col-xs-2:nth-child(4) .services_box img {width: 94%;}
+.weoffer .col-xs-2:nth-child(8) .services_box img {width: 78%;}
+.weoffer .col-xs-2:nth-child(11) .services_box img {width: 100%;}
+.border_btw {height: 1px; position: relative; height: 1px; background: #b7b7b7; margin: 30px 0;}
+.our_product h6 {margin: 0 0 0; padding: 15px 0 0; line-height: 21px;}
+.our_product {padding: 60px 0; background: url(../images/home/mobile/banner_our_product.jpg) no-repeat center center; background-size: cover;}
+.our_product .knowmore a {margin-top: 4px;}
+.brands #supplier_slider .services_box:first-child{margin-bottom: 36px;}
+.brands img {padding: 10px 15px;}
+.brands .owl-dots {width: 100%; float: left; margin: 0 0 0 0; text-align: center;}
+.brands .owl-dots .owl-dot {margin: 0 6px 23px 6px;}
+.brands .services_box{text-align: center; margin-bottom: 38px;}
+.brands .services_box h6{float: none; margin: 56px 0 0;}
+.clients_desc p {font-size: 11px; line-height: 19px; margin-bottom: 27px;}
+.clients_desc {padding: 26px;}
+.owl-carousel .owl-item .client_img_name img {width: 50px; height: 50px;}
+.client_img_name h5 {font-size: 14px; margin: 7px 0 6px;}
+.client_img_name h6 {font-size: 13px;}
+.client_img_name .desc {padding-left: 15px;}
+.clients_desc .quotes {left: 26px; width: 20px !important; top: -9px !important;}
+.clients {padding: 60px 0 80px;}
+.owl-dots .owl-dot, .brands .owl-dots .owl-dot,.clients .owl-dots .owl-dot {background-size: 13px !important; width: 13px; height: 13px;margin-right: 8px !important;margin-left: 8px !important;}
+.clients .owl-dots {bottom: -36px;}
+
+}

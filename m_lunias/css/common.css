@@ -1,0 +1,328 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;text-decoration:none;background:transparent;}
+body{line-height:1;}
+ol, ul{list-style:none;}
+blockquote, q{quotes:none;}
+blockquote:before, blockquote:after,
+q:before, q:after{content:'';content:none;}
+:focus{outline:0;}
+ins{text-decoration:none;}
+del{text-decoration:line-through;}
+table{border-collapse:collapse;border-spacing:0;}
+form textarea{resize:none;}
+a:hover, a:focus, a:active{text-decoration:none !important;color:inherit;outline:none !important;}
+
+
+/*FONT FAMILY*/
+
+@font-face {
+  font-family: 'Gotham-Black';
+  src: url(fonts/Gotham-Black.woff2) format('woff2'),
+       url(fonts/Gotham-Black.woff) format('woff');
+}
+@font-face {
+  font-family: 'Gotham-Bold-extra';
+  src: url(fonts/Gotham-Bold-extra.woff2) format('woff2'),
+       url(fonts/Gotham-Bold-extra.woff) format('woff');
+}
+@font-face {
+  font-family: 'Gotham-Bold';
+  src: url(fonts/Gotham-Bold.woff2) format('woff2'),
+       url(fonts/Gotham-Bold.woff) format('woff');
+}
+@font-face {
+  font-family: 'Gotham-BoldItalic';
+  src: url(fonts/Gotham-BoldItalic.woff2) format('woff2'),
+       url(fonts/Gotham-BoldItalic.woff) format('woff');
+}
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url(fonts/Gotham-Book.woff2) format('woff2'),
+       url(fonts/Gotham-Book.woff) format('woff');
+}
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: url(fonts/Gotham-Medium.woff2) format('woff2'),
+       url(fonts/Gotham-Medium.woff) format('woff');
+}
+@font-face {
+  font-family: 'Gotham-Medium-extra';
+  src: url(fonts/Gotham-Medium-extra.woff2) format('woff2'),
+       url(fonts/Gotham-Medium-extra.woff) format('woff');
+}
+@font-face {
+  font-family: 'Gotham-Thin';
+  src: url(fonts/Gotham-Thin.woff2) format('woff2'),
+       url(fonts/Gotham-Thin.woff) format('woff');
+}
+/*FONT FAMILY*/
+
+.fw,.fwp,.fwh,.fwpc,.fwvh,.fwpl,.fwpx,.fwpy,section,footer,header {width: 100%; float: left;}
+.fwp{position: relative;}
+.fwh {height: 100%;}
+.fwvh {height: 100vh;}
+.pr {position: relative;}
+.pc {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.fwpc {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+.fwpx {position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+.fwpy {position: absolute; left: 50%; top: 0; transform: translateX(-50%);}
+.px {position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+.pxr {position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
+.py {position: absolute; left: 50%; top: 0; transform: translateX(-50%);}
+.pyb {position: absolute; left: 50%; bottom: 0; transform: translateX(-50%);}
+.f0{font-size: 0;}
+.pd {padding: 0 !important;}
+.mg {padding: 0 !important;}
+.txc{text-align: center;}
+.txl{text-align: left;}
+.txr{text-align: right;}
+.wow{visibility:visible; }
+.blk_02 {color: #231f20 !important;}
+.hexagon {clip-path: polygon(50% 0, 100% 28%, 100% 72%, 50% 100%, 0% 72%, 0% 28%);}
+.Gotham_Black { font-family: 'Gotham-Black'; }
+.black { color: #000 !important; }
+.gray { color: #606060 !important; }
+.bgyellow { background-color: #fecf0c !important; }
+.bo {border: 0 !important;}
+
+body {font-family: 'Gotham-Book'; font-size: 15px;}
+header {margin: 46px 0 0; z-index: 999; }
+
+#Desktop_Header { transition: 0.3s; margin-top: 0px; padding: 46px 0 0; z-index: 999; position: fixed !important; left: 0px !important; top: 0px !important; width: 100% !important; }
+
+.logo img {width: 115px;transition: 0.3s; }
+#nav ul {display: block; margin-top: 51px; float: right; align-items: center; margin-right: 45px;transition: 0.3s;}
+#nav li{ display: inline-block; float: left; position: relative;}
+#nav li a{ display: inline-block; float: left; font-family: 'Gotham-Bold'; font-size: 15px; line-height: inherit; color: #fff; margin: 0 25px;}
+#nav li a:hover, #nav li a.active{ color: #fecf0c; }
+
+#Desktop_Header.sticky {padding: 12px 0; background: #fff; border-bottom: 1px solid #dedede; z-index: 9999999; }
+#Desktop_Header.sticky .logo img { width: 75px; }
+#Desktop_Header.sticky #nav ul { margin-top: 31px; }
+#Desktop_Header.sticky #nav .subnav { margin-top: 14px !important; padding-top: 42px !important; }
+#Desktop_Header.sticky #nav li a { color: #727271; transition: 0.3s; }
+#Desktop_Header.sticky #nav li a:hover, #Desktop_Header.sticky #nav li a.active { color: #444443 !important; }
+#Desktop_Header.sticky #nav .subnav a { color: #fff; transition: 0.3s; background: #444443 !important; }
+#Desktop_Header.sticky #nav .subnav a:hover, #Desktop_Header.sticky #nav .subnav a.active { background: #fecf0c !important; color: #fff !important; }
+
+#nav .subnav {display: none; position: absolute; left: -8%; top: 0px; padding-top: 34px; text-align: center; width: 116%; float: left; margin: 0;}
+#nav .subnav::before {width: 100%; height: 2px; content: ''; background: #fff; position: absolute; left: 0; top: 32px;}
+#nav .subnav li {width: 100%; float: left;}
+#nav .subnav li a{ transition: 0.3s; display: block; background-color:rgba(5,5,5,0.4); padding: 11px 0; width: 100%; float: left; margin: 4px 0 0; font-family: 'Gotham-Bold'; text-transform: uppercase; font-size: 14px; }
+#nav .subnav li a:hover, #nav .subnav li a.active { background-color: #fecf0c; color: #fff;}
+#nav .subnavatag:hover .subnav {display: block;}
+
+.banner_msg {margin-top: 5%;}
+.banner_msg h2{display: block; font-family: 'Gotham-Bold-extra'; /*font-size: 80px; line-height: 82px;*/ color: #fff; font-size: 4.2vw; line-height: 4.8vw;}
+.banner_msg h3{display: block; font-family: 'Gotham-Medium'; /*font-size: 35px;*/ font-size: 1.8vw; line-height: inherit; color: #fecf0c; margin: 16px 0 48px;}
+.knowmore a{display: inline-block; display: inline-block; font-family: 'Gotham-Medium'; font-size: 14px; line-height: inherit; color: #fff; border:2px solid #fff; padding: 18px 30px;transition: 0.3s;}
+.knowmore.orange a{border-color: #fecf0c; color: #59595c; margin-top: 24px;}
+.knowmore.white a{ color: #fff; }
+
+.knowmore a:hover, .knowmore.orange a:hover { border-color: #fecf0c; background:#fecf0c; color: #fff; }
+
+.owl-dot {
+  border: 0px;
+  width: 16px;
+  height: 16px;
+  margin-right: 26px;
+  display: inline-block;
+  background: url(../images/home/dot.png) no-repeat center center !important;
+  background-size: cover !important;
+  font-size: 0;
+  cursor: pointer;
+}
+.owl-dot.active {
+  background: url(../images/home/active_dot.png) no-repeat center center !important;
+  background-size: cover !important;
+}
+
+/*common*/
+.page_title {letter-spacing: 2px;}
+.page_title, .our_performance h5 {display: block; font-family: 'Gotham-Book'; font-size: 28px; line-height: inherit; color: #fff;}
+
+.about_us_desc h5, .about_us_desc h6, .about_us_desc h3, .about_us_desc h2, .about_us_desc p {width: 100%; float: left;}
+.about_us_desc h2 {display: block; font-family: 'Gotham-Book'; font-size: 18px; line-height: inherit; color: #606060; letter-spacing: 8px;}
+.about_us_desc h3 {display: block; font-family: 'Gotham-Thin'; font-size: 48px; line-height: 52px; color: #353535; margin:24px 0 0;}
+.about_us_desc h3 strong {margin-top: 5px; font-weight: normal; display: block; font-family: 'Gotham-Bold'; font-size: 52px; line-height: 55px; color: #000000; }
+.about_us_desc p {display: block; font-family: 'Gotham-Book'; font-size: 15px; line-height: 27px; color: #606060; margin: 18px 0 8px;}
+.about_us_desc h6 {display: block; font-family: 'Gotham-BoldItalic'; font-size: 15px; line-height: 26px; color: #000; }
+
+/*common*/
+
+footer {
+  background: #fff;
+  padding: 40px 0px;
+  overflow-y: hidden;
+}
+
+.contact_mailid {background: #fecf0c; height: 35px;}
+.contact_mailid p {display: inline-block; font-family: 'Gotham-Book'; font-size: 15px; line-height: 35px; color: #606060;}
+.contact_mailid p a {font-family: 'Gotham-Bold'; color: #444443;}
+.logo_symbol {position:absolute; right: -5%; top: -30px;}
+
+.footer_logo { float: left; }
+#footer_menus {
+  float: right;
+}
+.footer_menu {
+  float: left;
+  margin: 8px 0px 0px 0;
+}
+.footer_menu li {
+  padding: 5px 0px;
+  text-align: left;
+}
+.footer_menu li, .footer_menu li a {
+  font-size: 12px;
+  color: #606060;
+  font-family: 'Gotham-Book';
+}
+.footer_menu li.footer_title, .footer_menu li.footer_title a {
+  font-size: 15px;
+  color: #444443;
+  font-family: 'Gotham-Bold';
+}
+.footer_menu li.footer_title {padding: 10px 0;}
+
+#copyrights {
+  background: #606060;
+  padding: 19px 0px 18px 0px;
+}
+
+#copyrights p, #copyrights p a {
+  font-size: 11px;
+  color: #fff;
+}
+
+#Mobile_Menu {
+  position: fixed;
+  right: -100%;
+  top: 55px;
+  z-index: 9999999;
+  background: #fff;
+  width: 100%;
+  height: calc(100% - 55px);
+  transition: 0.5s;
+  overflow: scroll;
+}
+#Mobile_Menu.open_menu { right: 0px;  }
+#Mobile_Menu li {
+  float: left;
+  width: 100%;
+}
+#Mobile_Menu li ul { display: none; }
+#Mobile_Menu li a {
+  display: block;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: 'Gotham-Bold';
+  /*text-transform: uppercase;*/
+  color: #606060 !important;
+  padding: 21px 0px 22px 27px;
+  border-bottom: 1px solid #dedede;
+  position: relative;
+}
+#Mobile_Menu li span {
+  width: 10px;
+  height: 18px;
+  display: block;
+  position: absolute;
+  right: 30px;
+  top: 27px;
+  transition: 0.5s;
+  transform: rotate(-90deg);
+}
+#Mobile_Menu a.shown span { transform: rotate(0deg); right: 41px; top: 21px; }
+#Mobile_Menu a span:before, #Mobile_Menu a span:after {
+  content: '';
+  display: inline-block;
+  height: 12px;
+  width: 2px;
+  background-color: #212120;
+  border-radius: 2px;
+  position: relative;
+  transition: 100ms ease-in-out transform;
+}
+#Mobile_Menu a span:before {
+  transform: rotate(-45deg);
+  left: 6px;
+  top: 0px;
+}
+#Mobile_Menu a span:after {
+  transform: rotate(45deg);
+  left: 12px;
+  top: 0px;
+}
+
+#Mobile_Menu li ul li a {
+  font-size: 15px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+#Mobile_Menu a:hover, #Mobile_Menu a:active, #Mobile_Menu a:focus { background: #fecf0c; }
+#Mobile_Menu a.shown { background: #fecf0c; transition: 0.3s; border-color: #fecf0c; }
+
+/*Mobile*/
+@media only screen and (max-width: 768px) {
+
+.banner_msg {margin-top: 0%;}
+.top54mo {height: 54px; width: 100%; float: left;}
+
+  .fwpx.no_fwpx_mob { position: relative; left: 0px; top: 0px; transform: translate(0, 0); }
+
+.logo a{display: inline-block; float: left; margin: 7px 15px;}
+.logo img {width: 40px; float: left;}
+.nav_mo {display: inline-block; float: right; position: relative; padding-bottom: 18px; width: 26px; margin: 18px 15px 0 0;}
+.nav_mo span {display: inline-block; width: 26px; height: 2px; font-size: 0; background: #353535; position: absolute; left: 0; top:0;}
+.nav_mo span:nth-child(2), .nav_mo span:nth-child(3) {top:8px;}
+.nav_mo span:nth-child(4) {top:16px;}
+
+.menu_close span:nth-child(1), .menu_close span:nth-child(4) {display: none;}
+.menu_close span:nth-child(2){ transform: rotate(45deg); transition: 0.5s; }
+.menu_close span:nth-child(3) { transform: rotate(-45deg); transition: 0.5s; }
+
+header {background: #fff; margin-top: 0; position: fixed; left: 0; top: 0; border-bottom: 1px solid #dedede; z-index: 999999; }
+  
+/*================COMMON==================*/
+.about_us_desc {text-align: center;}
+.about_us_desc h2 {font-size: 12px; letter-spacing: 5px;}
+.about_us_desc h3 {font-size: 27px; line-height: 31px; margin-top: 18px;}
+.about_us_desc h3 strong {font-size: 32px; line-height: 31px;}
+.about_us_desc p {font-size: 13px; line-height: 21px; margin: 26px 0 0;}
+.knowmore a,.knowmore.orange a {padding: 14px 20px 12px; font-size: 11px;}
+
+
+.cities {font-size: 11px;}
+/*================COMMON==================*/
+
+
+/*FOOTER */
+footer {padding: 20px 0 18px; overflow: hidden;}
+.logo_symbol {display: none;}
+footer ul {float: left; display: inline-block; padding: 0 10px; margin-top: -2px;}
+footer ul:first-child {padding-left: 0;}
+footer ul:last-child {padding-right: 0;}
+footer ul li {display: block;}
+.footer_menu li.footer_title a{display: inline-block; font-family: 'Gotham-Bold'; font-size: 11px; line-height: inherit; color: #606060;}
+.footer_menu li, .footer_menu li a {font-size: 11px;}
+.footer_menu li {padding: 3px 0;}
+.footer_menu li.footer_title {padding: 6px 0;}
+.footer_logo_mo {display: inline-block;}
+.footer_logo_mo img {display: inline-block; margin-left: 5px;}
+#copyrights {padding: 6px 10px 4px;}
+#copyrights p, #copyrights p a {font-size: 9px; line-height: 18px;}
+.footer_menu {margin-top: 0;}
+.contact_mailid {height: 40px; padding-top: 5px;}
+.contact_mailid p {font-size: 12px; line-height: 16px;}
+
+.mob_auto_height{ height: auto !important; }
+
+}
